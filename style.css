@@ -1,0 +1,18 @@
+/* "Cascading" in this context means that because more than one stylesheet declaration could 
+apply to a particular piece of HTML, there has to be a known way of determining which specific
+ stylesheet rule applies to which piece of HTML. */
+
+ /* Css depends on
+1. Specificity :- means priority of selectors 
+Inline css > id > class > element
+2. !important 
+3. Order in which cssis declared , the last one have higher priority
+4. Inheritance means some css propertues will apply on all the elements insiade the selector like color but some
+ not like border
+ */
+p,a,h1,footer{
+    text-align: center;
+}
+article.classfirst{
+    background-color: brown;
+}
